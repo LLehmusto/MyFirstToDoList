@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo Lista</title>
+    <!-- Bootstrap, tyyli Minty -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css">
+    <link rel="stylesheet" href="styleSheet.css">
+
+</head>
+<body>
+<div class="jumbotron">
+
+    <h1>Tekemättömien tehtävien hallinta alkaa tästä!</h1>
+</div>
+<div class="container">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Näytä tekemättömät tehtävät</div>
+        <div class="panel-body">
+            <button class="btn btn-primary" onclick="nouda()">Nouda!</button>
+            <div class="panel-body" id="tulosNouda"></div>
+        </div>
+    </div>
+<br>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Poista tekemättömien töiden lista silmistä</div>
+        <div class="panel-body">
+            <button class="btn btn-warning" onclick="clearOutput()">Sulje!</button>
+        </div>
+    </div>
+<br>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Lisää uusi tehtävä tehtäväksi</div>
+        <div class="panel-body">
+            <form class="form-inline" id="todoInput">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="todoTeksti" placeholder="Tätä pitäisi tehdä...">
+                </div>
+                <button type="submit" class="btn btn-primary">Lisää!</button>
+            </form><br>
+            <div class="panel-body" id="tulosPostaa"></div>
+        </div>
+    </div>
+<br>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Poista tehty tehtävä listalta</div>
+        <div class="panel-body">
+            <input type="text" class="form-control" id="todoId" placeholder="Poistettavan tehtävän ID-numero..."><br>
+            <button class="btn btn-primary" onclick="poistaTehtava()">Poista!</button>
+            <div class="panel-body" id="poista"></div>
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<!-- Bootstrap, tyyli Minty -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="ash384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

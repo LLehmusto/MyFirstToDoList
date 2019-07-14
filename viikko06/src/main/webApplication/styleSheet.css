@@ -1,0 +1,19 @@
+
+.jumbotron {
+    background-image: url("ilmainen_kuva.jpg");
+    background-size: cover;
+}
+
+.panel-heading {
+    font-weight: bold;
+}
+
+.container {
+    padding: 10px;
+}
+
+.footer {
+    background-image: url("ilmainen_kuva.jpg");
+    background-size: cover;
+    height: 100px;
+}
