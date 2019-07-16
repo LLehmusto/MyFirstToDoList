@@ -50,7 +50,9 @@ function poistaTehtava() {
     var todoId = document.getElementById('todoId').value;
     poistettava.innerHTML = '';
 
-    axios.delete('http://localhost:8080/api/todot/' + todoId)
+    axios.delete('http://localhost:8080/api/todot/' + todoId, {
+        id:todoId
+    })
         .then(function (response) {
             poistettava.innerHTML = 'Poistit tehtävän onnistuneesti.';
         })

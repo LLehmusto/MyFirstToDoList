@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="todolista" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="todoharjoitus.todolista.TodolistaApplication" />
+    <module name="todolista" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
