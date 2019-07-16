@@ -61,7 +61,7 @@ public class ToDoDaoJdbcImpl implements ToDoDao {
 
     @Override
     public ToDo poista(int id) {
-        String sql = ("DELETE FROM task WHERE id=?");
+        String sql = ("DELETE FROM todot WHERE id=?");
         try (PreparedStatement lause = con.prepareStatement(sql)) {
             lause.setInt(1, id);
             lause.execute();

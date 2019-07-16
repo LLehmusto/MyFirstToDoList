@@ -45,7 +45,6 @@ function performPostRequest(e) {
     e.preventDefault();
 }
 
-// Tämä ei toimi, vaan antaa virheviestin.
 function poistaTehtava() {
     var poistettava = document.getElementById('poista');
     var todoId = document.getElementById('todoId').value;
