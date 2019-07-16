@@ -48,7 +48,7 @@ public class TodoController {
         if (poistettu != null)
             return ResponseEntity.ok(poistettu);
         return ResponseEntity
-                .status(HttpStatus.NOT_FOUND)
+                .status(HttpStatus.OK)
                 .body(String.format("Id %d ei ole olemassa: ei poistettu", id));
     }
 
